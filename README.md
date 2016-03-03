@@ -1,7 +1,7 @@
 which-gtin
 ===
 
-Determine what GTIN format the code is, what its real format is, and if it valid or not. Supports UPC-E.
+Determine what GTIN format the code is, what its real format is, and if it valid or not. Supports UPC-E (number systems 0 and 1).
 
 ---
 
