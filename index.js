@@ -1,5 +1,7 @@
 'use strict'
 
+var upcE = require('./upc-e')
+
 module.exports = function (code, upce) {
   var retval = {
     format: null,
@@ -55,18 +57,15 @@ module.exports = function (code, upce) {
 }
 
 function processUPCE (digits, retval) {
-  var canExpand = validateUPCE(digits)
-  if (!canExpand) return retval
-  retval.expanded = expandUPCE(digits)
-  padDigits(digits)
-  retval.valid = validateChecksum(digits)
-  return retval
-}
+  var validUPCE = upcE.validate(digits)
+  retval.expanded = upcE.expand(digits)
+  if (!validUPCE) return retval
 
-function validateUPCE (digits) {
-  const numberSystem = digits[0]
-  // UPC-E needs to use the 0 or 1 number system.
-  if (numberSystem !== '0' && numberSystem !== '1') return false
+  // Now, validate the UPC-A checksum.
+  var expandedDigits = retval.expanded.split('')
+  padDigits(expandedDigits)
+  retval.valid = validateChecksum(expandedDigits)
+  return retval
 }
 
 function determineReal (digits, format) {

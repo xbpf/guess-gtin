@@ -38,7 +38,8 @@ Returns an object that follows this format:
     - If given code is `00000032435887`, the `format` is `GTIN-14`, but `real` is `GTIN-8`.
 * `valid`: Whether the checksum is valid.
 * `expanded`: `GTIN-12` code expanded from the given `UPC-E` code.
-    - Only applies if the `upce` argument is `true`.
+    - Only applies if format is 'UPC-E'.
+    - **note**: The expanded `UPC-A` code can be a `GTIN-8` code. If you want to be 100% accurate, run the expanded value through the function again.
 
 
 ```js
