@@ -1,0 +1,39 @@
+{
+  "name": "which-gtin",
+  "version": "1.0.0",
+  "description": "Determine which GTIN format the provided value is, and if it is valid or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xbpf/which-gtin.git"
+  },
+  "keywords": [
+    "gtin",
+    "upc",
+    "ean",
+    "ucc",
+    "itf",
+    "itf-14",
+    "itf14",
+    "ean-13",
+    "ean13",
+    "ucc-12",
+    "upc-e",
+    "upce",
+    "upca",
+    "upc-a",
+    "validation",
+    "format",
+    "valid",
+    "validate"
+  ],
+  "author": "Ivan K <ivan@sq10.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xbpf/which-gtin/issues"
+  },
+  "homepage": "https://github.com/xbpf/which-gtin#readme"
+}
