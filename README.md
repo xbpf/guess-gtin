@@ -28,8 +28,8 @@ Returns an object that follows this format:
 * `format`: The given format. Determined from the code length.
     - `"GTIN-14"`, `"GTIN-13"`, `"GTIN-12"`, `"GTIN-8"`: Code is 14, 13, 12, 8 digits long, respectively.
         + `GTIN-14` = `ITF-14`
-        + `GTIN-13` = `EAN` and `EAN-13`
-        + `GTIN-12` = `UPC` and `UPC-A`
+        + `GTIN-13` = `EAN` = `EAN-13`
+        + `GTIN-12` = `UPC` = `UPC-A`
         + `GTIN-8` = `EAN-8`
     - `"UPC-E"`: Code is 8 digits long, and the `upce` argument is `true`.
     - `null`: Code is of an invalid format.
