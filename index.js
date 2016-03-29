@@ -78,7 +78,7 @@ function determineReal (digits, format) {
 
 function padDigits (digits) {
   var zeroes = 14 - digits.length
-  for (let i = 0; i < zeroes; i++) {
+  for (var i = 0; i < zeroes; i++) {
     digits.unshift('0')
   }
 }

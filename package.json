@@ -1,6 +1,6 @@
 {
   "name": "which-gtin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Determine which GTIN format the provided value is, and if it is valid or not.",
   "main": "index.js",
   "scripts": {
