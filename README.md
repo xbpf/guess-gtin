@@ -1,3 +1,5 @@
+**Deprecated in favor of [xbpf/gtin](https://github.com/xbpf/gtin)**.
+
 which-gtin
 ===
 
