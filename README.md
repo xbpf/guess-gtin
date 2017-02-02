@@ -3,6 +3,8 @@
 which-gtin
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xbpf/which-gtin.svg)](https://greenkeeper.io/)
+
 Determine what GTIN format the code is, what its real format is, and if it valid or not. Supports UPC-E (number systems 0 and 1).
 
 ---
